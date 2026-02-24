@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Oogie ❤️</title>
+
+<style>
+body {
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: Arial;
+    text-align:center;
+    color:white;
+}
+
+.card {
+    background: rgba(0,0,0,0.3);
+    padding:40px;
+    border-radius:20px;
+    animation: fadeIn 2s;
+}
+
+h1 {
+    font-size:3em;
+}
+
+button {
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+@keyframes fadeIn {
+from {opacity:0; transform:scale(0.8);}
+to {opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h1>Happy Birthday Oogie Poo 🎂</h1>
+
+<p id="message">
+Click below for a surprise ❤️
+</p>
+
+<button onclick="showLove()">Open Message</button>
+</div>
+
+<script>
+function showLove(){
+document.getElementById("message").innerHTML =
+"You are the best thing that ever happened to Dosa ❤️ <br><br>\
+From the day you entered my life, everything upgraded. <br>\
+More happiness. More peace. More love. <br><br>\
+I promise to keep choosing you — today, tomorrow, forever. <br><br>\
+Happy Birthday My Oogie 💕";
+}
+</script>
+
+</body>
+</html>
